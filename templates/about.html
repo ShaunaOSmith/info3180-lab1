@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>My Website- About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
 </head>
 <body>
-    <h1>Shauna Smith</h1>
-    <p>I am a third-year student at the University of the West Indies, Mona, majoring in Computer Science. My aspiration is to be a Web Devloper</p>
+    <section class="about">
+        <div class="main">
+            <img src="{{ url_for('static', filename='img/Shauna.jfif') }}">
+            <div class="about-text">
+                <h1>Shauna Smith</h1>
+                <p>I am a third-year student at the University of the West Indies, Mona, majoring in Computer Science. 
+                    Throughout my studies, I have developed a solid understanding of the foundational languages and technologies used in web development, including HTML, CSS, JavaScript, PHP, and Python. 
+                    While I have focused primarily on mastering these fundamental skills, I am eager to expand my knowledge and delve deeper into the intricacies of web development.
+                     My aspiration is to become a proficient Web Developer, utilizing my expertise in these languages to create dynamic and engaging web applications.
+                      I am committed to continuous learning and growth in this field, and I am excited about the opportunities that lie ahead in my journey towards achieving this goal.</p>
+            </div>
+        </div>
+    </section> 
 </body>
 </html>
